@@ -31,7 +31,7 @@ def processCommand(c):
         webbrowser.open(link)
 
 if __name__ == "__main__":
-    speak("Initializing Jarvis")
+    speak("Initializing ROBO")
     
     while True:
         r = sr.Recognizer()
@@ -45,9 +45,9 @@ if __name__ == "__main__":
 
             # Convert audio to text
                 word = r.recognize_google(audio)
-            if "jarvis" in word.lower():
+            if "ROBO" in word.lower():
                 speak("Yeah")
-                print("Jarvis active")
+                print("ROBO active")
                 
 
 
